@@ -1,0 +1,17 @@
+<apex:page standardController="Account" recordSetVar="Account" lightningStylesheets="True" tabstyle="Account" sidebar="false">
+  <apex:pageBlock>
+    <apex:pageBlockTable value="{!Account}" var="acc">
+      <apex:column value="{!acc.Name}"/>
+      <apex:column value="{!acc.AnnualRevenue}"/>
+      <apex:column  value="{!acc.Industry}"/>
+      <apex:column  value="{!acc.NumberOfEmployees}"/>
+      <apex:column  value="{!acc.Phone}"/>
+    </apex:pageBlockTable>
+     <apex:form>
+    <apex:panelGrid columns="2">
+      <apex:commandLink action="{!previous}">Previous</apex:commandlink>
+      <apex:commandLink action="{!next}">Next</apex:commandlink>
+    </apex:panelGrid>
+    </apex:form>
+  </apex:pageBlock>
+</apex:page>

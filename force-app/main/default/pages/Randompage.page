@@ -1,0 +1,24 @@
+<apex:page controller='threemethodsclass' lightningStylesheets="True">
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockSection>
+                <apex:inputText value="{!num1}">Num1</apex:inputText>
+                <apex:inputText value="{!num2}">Num2</apex:inputText>
+                <apex:commandButton action="{!sumresult}">Sum of Numbers</apex:commandButton>
+                {!sum}
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection>
+                <apex:inputText value="{!fname}">First Name</apex:inputText>
+                <apex:inputText value="{!lname}">Last Name</apex:inputText>
+                <apex:commandButton action="{!fullname}">Full Name</apex:commandButton>
+                {!name}
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection>
+                <apex:commandButton action="{!todaydate}">Get Today Date</apex:commandButton>
+                {!today}
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

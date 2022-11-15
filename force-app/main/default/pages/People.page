@@ -1,0 +1,10 @@
+<apex:page Controller="peopleclass">
+    
+    <form>
+        <apex:repeat value="{!result}" var="res">
+        {!res} <br/>
+        </apex:repeat>
+    </form>
+
+</apex:page>
+  

@@ -1,0 +1,8 @@
+<apex:page Controller="UsrnameandActname">
+    <apex:pageBlock>
+    <apex:pageBlockTable value="{!res}" var = 'r'>
+        <apex:column><apex:outputText value="{!r.name}"/></apex:column>
+        <apex:column><apex:outputText value="{!r.owner.name}"/></apex:column>
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

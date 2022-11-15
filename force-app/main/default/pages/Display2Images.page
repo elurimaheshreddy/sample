@@ -1,0 +1,6 @@
+<apex:page>
+<div align='Center'>
+    <apex:image id="theFirstImage" value="{!$Resource.Apps_Logo}" width="300" height="100"/>
+    <apex:image id="theSecondImage" value="{!$Resource.Salesforce_Logo}" width="300" height="100"/>
+</div>    
+</apex:page>

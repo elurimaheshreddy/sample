@@ -1,0 +1,11 @@
+<apex:page standardController="My_Product__c" recordSetVar="Product">
+  <apex:pageBlock>
+    <apex:pageBlockTable value="{!Product}" var="pro">
+      <apex:column value="{!pro.Name}"/>
+      <apex:column value="{!pro.Type__c}"/>
+      <apex:column  value="{!pro.Price__c}"/>
+      <apex:column  value="{!pro.Weight__c}"/>
+      <apex:column  value="{!pro.Colour__c}"/>
+    </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:page>
